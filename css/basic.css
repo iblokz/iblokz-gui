@@ -1,0 +1,399 @@
+	body {
+		font-family: Helvetica, Arial;
+		font-size: 12px;
+		height: 100%; width: 100%;
+		margin:0px 0px; padding:0px;
+	}
+
+	p, span, div, input, select, textarea, a, td, th {
+		font-family: Helvetica, Arial;
+		font-size: 14px;
+	}
+
+	.fleft {
+		float: left;
+	}
+				
+	.fright {
+		float: right;
+	}
+
+	.iblock {
+		display: inline-block;
+	}
+	
+	header {
+	    width: 100%;
+	    background: #EFEFEF;
+	    margin: 0px;
+	    display: inline-block;
+	}
+
+    header > h1, header > h2 { 
+        float: left;
+        margin: 10px; color: #000; opacity: 0.7
+	}
+
+	h1 {
+        font-size: 20px; 
+	}
+
+	header > ul {
+        float: left;
+        display: inline-block;
+        margin: 8px 0px 0px 30px;
+        font-size: 12px;
+    }
+    
+    header > ul > li {
+        padding: 5px;
+        display: inline-block;
+        margin: 0px 5px 0px 0px;
+        border: 1px solid rgba(127,127,127, 0.1);
+        border-radius: 5px;
+        color: rgba(127,127,127, 0.5);
+        cursor: pointer;
+    }
+    
+    header > ul > li:hover {
+        border: 1px solid rgba(127,127,127, 0.7);
+        color: rgba(127,127,127, 0.7);
+    }
+
+	table.iblokz-datagrid {
+    	border: 1px solid rgb(221, 221, 221);
+    	border-radius: 4px;
+		border-collapse: separate;
+		color: rgb(51, 51, 51);
+		font-size: 14px;
+		line-height: 20px;
+		margin: 15px;
+		max-width: 100%;
+		clear: both;
+    }
+    
+    table.iblokz-datagrid td, table.iblokz-datagrid th {
+		height: 20px;
+		line-height: 20px;
+		font-size: 14px;
+		padding: 8px;
+		vertical-align: bottom;
+    }
+    
+    table.iblokz-datagrid th {
+    	font-weight: bold;
+    }
+
+	table.iblokz-datagrid tbody {
+		overflow-y: auto;
+	}
+
+	table.iblokz-datagrid thead tr th {
+		border-collapse: collapse;
+		border-bottom: 1px solid rgb(221, 221, 221);
+		border-left: 1px solid rgb(221, 221, 221);
+		color: #555;
+		font-weight: lighter;
+		background: repeat top left, -webkit-gradient( linear, left top, left bottom, color-stop(0,#FFF), color-stop(0.9,#FCFCFC),color-stop(1,#F8F8F8));
+		opacity: 1;
+    }
+
+	table.iblokz-datagrid thead tr th:first-child {
+		border-radius: 4px 0px 0px 0px
+	}
+
+	table.iblokz-datagrid thead tr th:last-child {
+		border-radius: 0px 4px 0px 0px
+	}
+
+	table.iblokz-datagrid tbody tr td,
+    table.iblokz-datagrid tbody tr th {
+		border-collapse: collapse;
+		border-top: 1px solid rgb(221, 221, 221);
+		border-left: 1px solid rgb(221, 221, 221);
+		color: #333;
+		background: repeat top left, -webkit-gradient( linear, left top, left bottom, color-stop(0,#FFF), color-stop(0.9,#FCFCFC),color-stop(1,#F8F8F8));
+		opacity: 0.7;
+    }
+    
+    table.iblokz-datagrid tbody tr:first-child td,
+    table.iblokz-datagrid tbody tr:first-child th{
+    	border-top: 0px none;
+    }
+    
+    table.iblokz-datagrid thead tr th:first-child,
+    table.iblokz-datagrid tbody tr td:first-child,
+    table.iblokz-datagrid tbody tr th:first-child{
+    	border-left: 0px none;
+    }
+    
+    table.iblokz-datagrid tbody tr:hover td,
+	table.iblokz-datagrid tbody tr:hover th {
+		background: #FCFCFC;
+        opacity: 1;
+		-webkit-transition: opacity linear 0.1s, background linear 0.1s;
+	}
+	
+	table.iblokz-datagrid tbody tr td:hover, 
+	table.iblokz-datagrid tbody tr th:hover {
+	    background: #FAFAFA;
+		-webkit-transition: opacity linear 0.1s, background linear 0.1s;
+	}
+
+	table.iblokz-datagrid tbody tr:last-child td:first-child,
+	table.iblokz-datagrid tbody tr:last-child th:first-child{
+		border-radius: 0px 0px 0px 4px
+	}
+
+	table.iblokz-datagrid tbody tr:last-child td:last-child,
+	table.iblokz-datagrid tbody tr:last-child th:last-child {
+		border-radius: 0px 0px 4px 0px
+	}
+
+	table.iblokz-datagrid tbody tr td:last-child a {
+		cursor: pointer;
+	}
+	table.iblokz-datagrid tbody tr td:last-child a:hover {
+		text-decoration: underline;
+	}
+
+	table.iblokz-datagrid tbody input {
+		border: 0px; 
+		margin: 0px;
+		background: inherit;
+		width: 100%; 
+		height: 100%; 
+		padding: 0px;
+		min-width: 50px;
+		box-sizing:inherit;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: inherit;
+	}
+			
+	table.iblokz-datagrid tbody input:focus {
+		-webkit-box-shadow: #CCC 0px 0px 0px;
+		outline: -webkit-focus-ring-color auto 0px;
+	}
+	
+	table.iblokz-datagrid tbody tr td.activeCell {
+		-moz-box-shadow:    inset 0 0 3px #779;
+		-webkit-box-shadow: inset 0 0 3px #779;
+		box-shadow:         inset 0 0 3px #779;
+		/*
+			-webkit-transition: linear 0.1s;
+		*/
+	}
+		
+	.iblokz_dropdown {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		background: url("/img/icons/glyphicons/png/glyphicons_219_circle_arrow_down.png") 
+						no-repeat right;
+		background-size: 15px;
+		background-position: 215px;
+		cursor: pointer;
+		
+	}
+	
+	.iblokz_dropdown select {
+		background: transparent;
+		width: 100%;
+		line-height: 1;
+		border: 0;
+		border-radius: 0;
+		height: 100%;
+		-webkit-appearance: none;
+		cursor: pointer;
+	}
+			
+	.iblokz_dropdown select:focus {
+		-webkit-box-shadow: #CCC 0px 0px 0px;
+		outline: -webkit-focus-ring-color auto 0px;
+	}
+
+	.tabPanelTabs {
+		padding: 0px;
+		margin: 0px;
+		background-color: #FAFAFA;
+        border: 1px solid #EEE;
+        border-bottom: 0px;
+    }
+    
+    .tabPanelTabs li {
+		float: left;
+		display: block;
+		font-size: 14px;
+		border: 1px solid #CCC;
+		color: #999;
+		border-bottom: 1px solid #AAA;
+		border-radius: 5px 5px 0 0;
+		padding: 5px;
+        margin: 5px 0 0 5px;
+        cursor: pointer;
+        background: repeat top left, -webkit-gradient( linear, left top, left bottom, color-stop(0,#FFF), color-stop(0.9,#FBFBFB),color-stop(1,#EFEFEF));
+        background: repeat top left, -moz-linear-gradient( top, #FFF, #FBFBFB 50%, #EFEFEF);
+		-webkit-transition: border linear 0.01s, background linear 0.1s;
+    }
+    
+    .tabPanelTabs li.active {
+        background: repeat top left, -webkit-gradient( linear, left bottom, left top, color-stop(0,#FFF), color-stop(0.9,#FBFBFB),color-stop(1,#EFEFEF));
+        background: repeat top left, -moz-linear-gradient( bottom, #FFF, #FBFBFB 50%, #EFEFEF);
+        color: #333;
+        border-bottom: 1px solid #FFF;
+    }
+    
+    
+	.tabPanelTabs li:hover {
+		background: #FFF !important;
+        border-bottom: 1px solid #FFF;
+	}
+    
+    .tabPanelContent {
+        clear: both;
+        display: block;
+        border: 1px solid #AAA;
+        border-top: 0px none;
+        margin: 0px;
+        box-shadow: 0px -1px 1px #AAA;
+        padding: 1px;
+    }
+
+	.iblokz-toolbar {
+		display: block;
+		margin: 10px;
+	}
+
+			.iblokz-toolbar li {
+				padding: 5px;
+				float: left;
+				margin: 5px;
+				margin-right: 5px;
+				cursor: pointer;
+				opacity: 0.7;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+					
+			.iblokz-toolbar li:hover {
+				border: 1px solid #AAA;
+				border-radius: 5px;
+				padding: 4px;
+				opacity: 1;
+			}
+					
+			.iblokz-toolbar li.icon {
+				padding-left: 20px;
+				background-repeat: no-repeat;
+				background-size: 11px;
+				background-position: 5px 6px;
+			}
+			
+			.iblokz-toolbar li.icon:hover {
+				padding-left: 19px;
+				background-position: 4px 5px;
+			}
+			
+			.iblokz-toolbar li.clicked {
+				padding-top: 5px;
+				padding-bottom: 3px;
+			}
+				
+			.iblokz-toolbar li.icon.clicked {
+				background-position: 4px 6px;
+			}
+			
+			/*
+
+			.icon.new {
+				background-image: url("/img/icons/glyphicons/png/glyphicons_190_circle_plus.png");						
+			}
+			.icon.edit {
+				background-image: url("/img/icons/glyphicons/png/glyphicons_150_edit.png");						
+			}
+			.icon.delete {
+				background-image: url("/img/icons/glyphicons/png/glyphicons_191_circle_minus.png");						
+			}
+			.icon.refresh {
+				background-image: url("/img/icons/glyphicons/png/glyphicons_081_refresh.png");						
+			}
+			.icon.chevron-left {
+				background-image: url("/img/icons/glyphicons/png/glyphicons_224_chevron-left.png");						
+			}
+			.icon.chevron-right {
+				background-image: url("/img/icons/glyphicons/png/glyphicons_223_chevron-right.png");						
+			}
+
+			*/
+
+			table.calendar th, table.calendar td {
+				width: 25px;
+				font-size: 12px;
+				padding: 4px;
+				cursor: default;
+			}
+
+			table.calendar td:hover{
+				cursor: pointer;
+				text-decoration: underline;
+			}
+
+			table.calendar tr {
+				height: 30px;
+			}
+			
+			table.calendar td.weekend  {
+				background: #F6F6F6;
+			}
+			
+			table.calendar td.curday  {
+				background: #EFEFEF;
+				text-decoration: underline;
+			}
+			
+			.month-select {
+				margin: 15px;
+				width: 237px;
+				height: 27px;
+				background: repeat top left, -webkit-gradient( linear, left top, left bottom, color-stop(0,#FFF), color-stop(0.9,#FCFCFC),color-stop(1,#F8F8F8));
+				border: 1px solid rgb(221, 221, 221);
+				border-radius: 5px;
+				color: #555;
+				text-align: center;
+				vertical-align: middle;
+			}
+			
+			.month-select span {
+				margin-top: 6px;
+				display: inline-block;
+				font-size: 16px;
+			}
+				
+			.month-select button {
+				display: block;
+				width: 35px;
+				height: 27px;
+				background-repeat: no-repeat;
+				background-size: 8px;
+				background-position: 50% 50%;
+				background-color: inherit;
+				border: 0px;
+				cursor: pointer;
+			}
+			
+			.month-select button:hover {
+				background-color: #F6F6F6;
+			}
+			
+			.month-select button.fleft {
+				border-radius: 5px 0 0 5px;
+			}
+			
+			.month-select button.fright {
+				border-radius: 0 5px 5px 0;
+			}
