@@ -65,6 +65,8 @@
 				
 				this._children[this._activeTab].show();
 				
+				return true;
+				
 			}
 			
 		});

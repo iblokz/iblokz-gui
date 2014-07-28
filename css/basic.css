@@ -6,7 +6,7 @@
 	}
 
 	p, span, div, input, select, textarea, a, td, th {
-		font-family: Helvetica, Arial;
+		font-family: inherit;
 		font-size: 14px;
 	}
 
@@ -247,7 +247,7 @@
     
 	.tabPanelTabs li:hover {
 		background: #FFF !important;
-        border-bottom: 1px solid #FFF;
+        /* border-bottom: 1px solid #FFF; */
 	}
     
     .tabPanelContent {

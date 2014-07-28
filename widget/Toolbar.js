@@ -19,8 +19,10 @@
 				
 				for(el in this._els){
 					var elObj = $('<li></li>');
+					var elLink = $('<a></a>');
+					
 					if(this._els[el]['text']){
-						elObj.html(this._els[el]['text']);
+						elLink.html(this._els[el]['text']);
 					}
 					
 					if(this._els[el]['cls']){
@@ -28,7 +30,11 @@
 					}
 		
 					if(this._els[el]['callback']){
-						elObj.click(this._els[el]['callback']);
+						elLink.click(this._els[el]['callback']);
+					}
+					
+					if(this._els[el]['href']){
+						elLink.attr("href",this._els[el]['href'])
 					}
 		
 					elObj.mousedown(function(){
@@ -38,6 +44,8 @@
 					}).mouseout(function(){
 						$(this).removeClass('clicked');
 					});
+					
+					elLink.appendTo(elObj);
 					
 					elObj.appendTo(this._obj);
 				}

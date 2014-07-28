@@ -4,6 +4,7 @@
 			_link : 'dom.Bean',
 			_tag : '<div></div>',
 			_prefs : {},
+			_id : '',
 			_obj : {},
 			_content : null,	
 			_html : '',
@@ -30,8 +31,10 @@
 					iblokz.pointers[prefs.id] = this;
 					if($("#"+prefs.id)[0]){
 						this._obj = $("#"+prefs.id);
-						this._html = $("#"+prefs.id).html();
+						//this._html = $("#"+prefs.id).html();
+						
 					}
+					this._id = prefs.id;
 				}
 				
 				if(!this._obj[0])
@@ -48,15 +51,16 @@
 					
 			},
 			construct : function(){
-					
+				
 				if(this._content === null)
 					this._content = this._obj;
 				
 				if(this._prefs.html){
 					this._html = this._prefs.html;
 				}
+				this._children = [];
 				if(this._prefs.items){
-					var children = [];						
+					var children = [];
 					for(i in this._prefs.items){
 						var item = new iblokz.classLinks[this._prefs.items[i].link](this._prefs.items[i],this._content);
 						children.push(item);
@@ -66,6 +70,7 @@
 				if(this._html != ''){
 					this._content.html(this._html);
 				}
+				
 			},
 			redraw : function(){ 
 				this._obj.html(''); 
@@ -81,25 +86,32 @@
 				this._html = html;
 			},
 			addChild : function(child) {
-				child.setContainer(this._obj);				
+				child.setContainer(this._content);				
 				this._children.push(child);
 			},
 			show: function() {
 				if($.contains(this._container[0],this._obj[0]))
-					this._obj.hide().fadeIn('fast');
+					this._obj.hide().show();
 				else
-					this._obj.hide().appendTo(this._container).fadeIn('fast');
-
+					this._obj.hide().appendTo(this._container).show();
+				
 				for(i in this._children){
 					this._children[i].show();
 				}
 				
+				return true;
 			},
 			hide: function() {
 				for(i in this._children){
 					this._children[i].hide();
 				}
 				this._obj.hide();
+			},
+			destroy: function(){
+				for(i in this._children){
+					this._children[i].destroy();
+				}
+				
 			}
 		});
 		iblokz.dom.Form = new JS.Class(iblokz.dom.Bean,{

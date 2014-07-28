@@ -389,7 +389,7 @@
 					this._footer.show();
 				}
 				
-				this.callSuper();
+				return this.callSuper();
 			}
 			
 		});

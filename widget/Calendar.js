@@ -158,7 +158,7 @@
 				this._monthSelect.show();
 				this._calendarBody.show();
 				
-				
+				return true;
 			},
 			hide: function() {
 				
