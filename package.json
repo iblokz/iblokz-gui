@@ -1,0 +1,24 @@
+{
+  "name": "iblokz-gui",
+  "version": "0.1.0",
+  "description": "a component gui library for RAD, initialy intended as a an alternative to ext.js",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iblokz/iblokz-gui.git"
+  },
+  "keywords": [
+    "gui",
+    "rad",
+    "ext"
+  ],
+  "author": "Alex Milanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iblokz/iblokz-gui/issues"
+  },
+  "homepage": "https://github.com/iblokz/iblokz-gui#readme"
+}

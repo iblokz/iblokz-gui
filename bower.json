@@ -1,0 +1,22 @@
+{
+  "name": "iblokz-gui",
+  "version": "0.1.0",
+  "homepage": "https://github.com/iblokz/iblokz-gui",
+  "authors": [
+    "Alex Milanov <alex@i4web.biz>"
+  ],
+  "description": "a component gui library for RAD, initialy intended as a an alternative to ext.js",
+  "keywords": [
+    "gui",
+    "rad",
+    "ext"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
