@@ -1,4 +1,22 @@
-iblokz-gui
-==========
+# iblokz-gui
 
-iBlokz GUI is a JavaScript library build on jQuery and OOP.js aimed at providing an easily extensible alternative to Ext.js
+iblokz-gui is a component gui library for RAD, initialy intended as a an easily extendable alternative to ext.js with focus on minimalism
+
+## setup
+
+### dependencies
+
+global
+
+```sh
+# gulp
+npm install -g gulp-cli
+# sass - needs ruby
+gem install sass
+```
+
+node and bower
+
+```sh
+npm install && bower install
+```

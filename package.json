@@ -1,7 +1,7 @@
 {
   "name": "iblokz-gui",
   "version": "0.1.0",
-  "description": "a component gui library for RAD, initialy intended as a an alternative to ext.js",
+  "description": "a component gui library for RAD, initialy intended as a an easily extendable alternative to ext.js with focus on minimalism",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

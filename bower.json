@@ -5,7 +5,7 @@
   "authors": [
     "Alex Milanov <alex@i4web.biz>"
   ],
-  "description": "a component gui library for RAD, initialy intended as a an alternative to ext.js",
+  "description": "a component gui library for RAD, initialy intended as a an easily extendable alternative to ext.js with focus on minimalism",
   "keywords": [
     "gui",
     "rad",
